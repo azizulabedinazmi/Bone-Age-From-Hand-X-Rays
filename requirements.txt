@@ -1,0 +1,20 @@
+# Install PyTorch FIRST, with CUDA, from the PyTorch index (PyPI's Windows build is CPU-only):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# Then:
+#   pip install -r requirements.txt
+timm>=0.9.16
+albumentations>=1.4
+opencv-python-headless>=4.8
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+pillow
+joblib
+tabulate
+psutil
+kaggle
+kagglehub>=0.3.13
+ipykernel
+jupyterlab

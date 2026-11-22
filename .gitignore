@@ -1,0 +1,19 @@
+# Python / Jupyter
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# RSNA Bone Age data: not redistributed (download from Kaggle)
+Notebook/data/
+
+# Run outputs: checkpoints, image cache, predictions.
+# The run records and logs that the README cites are copied to results/ (committed).
+Notebook/work/
+Notebook/boneage_lib.py
+*.pt
+
+# Kaggle credentials
+kaggle.json
+
+# Unzipped Kaggle "Output" downloads: sort what is needed into results/ and assets/, then delete
+*_Outputs/

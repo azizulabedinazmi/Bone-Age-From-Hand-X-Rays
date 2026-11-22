@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below and credit Azizul Abedin Azmi."
+type: software
+title: "Bone Age from Hand X-Rays: Sex-Conditioned EfficientNetV2 Regression on the RSNA Pediatric Bone Age Dataset"
+authors:
+  - given-names: "Azizul Abedin"
+    family-names: "Azmi"
+    orcid: "https://orcid.org/0009-0003-5269-6900"
+license: MIT
+repository-code: "https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays"
+url: "https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays"
+abstract: >-
+  Regression of pediatric skeletal (bone) age in months from left-hand radiographs of the
+  RSNA Pediatric Bone Age dataset, using an EfficientNetV2-S with a learned sex embedding,
+  pad-to-square preprocessing and CLAHE, evaluated on a stratified hold-out set and compared
+  across a laptop RTX 4060 and a Kaggle GPU.
+keywords:
+  - bone age assessment
+  - pediatric radiology
+  - hand X-ray
+  - medical imaging
+  - deep learning
+  - EfficientNetV2
+  - RSNA
+references:
+  - type: article
+    title: "The RSNA Pediatric Bone Age Machine Learning Challenge"
+    authors:
+      - family-names: "Halabi"
+        given-names: "Safwan S."
+      - name: "et al."
+    journal: "Radiology"
+    year: 2019
+    volume: 290
+    issue: 2
+    start: 498
+    end: 503
