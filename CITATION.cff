@@ -9,6 +9,13 @@ authors:
 license: MIT
 repository-code: "https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays"
 url: "https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays"
+identifiers:
+  - type: url
+    value: "https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays"
+    description: "Source code, notebooks and results"
+  - type: url
+    value: "https://www.kaggle.com/code/azizulabedinazmi/bone-age-rsna-azmi-kaggle/notebook?scriptVersionId=372515174"
+    description: "Published Kaggle notebook with the Tesla T4 run (version 372515174)"
 abstract: >-
   Regression of pediatric skeletal (bone) age in months from left-hand radiographs of the
   RSNA Pediatric Bone Age dataset, using an EfficientNetV2-S with a learned sex embedding,

@@ -9,7 +9,8 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![timm](https://img.shields.io/badge/timm-EfficientNetV2--S-FFB000)](https://github.com/huggingface/pytorch-image-models)
-[![Kaggle](https://img.shields.io/badge/Kaggle-RSNA%20Bone%20Age-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/kmader/rsna-bone-age)
+[![Kaggle notebook](https://img.shields.io/badge/Kaggle-Notebook%20(T4%20run)-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/code/azizulabedinazmi/bone-age-rsna-azmi-kaggle/notebook?scriptVersionId=372515174)
+[![Dataset](https://img.shields.io/badge/Dataset-RSNA%20Bone%20Age-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/kmader/rsna-bone-age)
 [![GPUs](https://img.shields.io/badge/Tested%20on-RTX%204060%20Laptop%20%7C%20Kaggle%20GPU-76B900?logo=nvidia&logoColor=white)](#54-laptop-rtx-4060-vs-kaggle-tesla-t4)
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-yellow.svg)](LICENSE)
 [![Docs: CC BY 4.0](https://img.shields.io/badge/Docs%20%26%20figures-CC%20BY%204.0-lightgrey.svg)](LICENSE-docs)
@@ -214,7 +215,7 @@ sex (0/1) ─────────► Linear(1→32) + SiLU ─────�
 | Software | Windows 11, Python 3.12.9, torch 2.11.0+cu128, cuDNN 9.19, timm 1.0.31 | Linux, Python 3.13, torch 2.11.0+cu130, cuDNN 9.27, timm 1.0.30 |
 | Data source | `Notebook/data/rsna-bone-age/` | dataset mounted under `/kaggle/input/datasets/kmader/rsna-bone-age` |
 | Image cache | `Notebook/work/cache/` (reused from an earlier run) | `/tmp/boneage_cache` (built during the run, 5 min) |
-| Notebook with outputs | `Notebook/bone-age-rsna-azmi-local-geforce-rtx-4060-laptop-gpu.ipynb` | `Notebook/bone-age-rsna-azmi-kaggle.ipynb` |
+| Notebook with outputs | `Notebook/bone-age-rsna-azmi-local-geforce-rtx-4060-laptop-gpu.ipynb` | `Notebook/bone-age-rsna-azmi-kaggle.ipynb`, also [public on Kaggle](https://www.kaggle.com/code/azizulabedinazmi/bone-age-rsna-azmi-kaggle/notebook?scriptVersionId=372515174) (version 372515174) |
 | Code, split, seed, settings | identical: seed 42, 512 px, batch 16, 20 epochs, fold 0 | identical |
 
 The software versions, CPU threads, peak GPU memory and the time of every stage are measured during each run, and
@@ -465,7 +466,12 @@ speed I can check whether two GPUs give the same answers, image by image.
 
 ### Option A: Kaggle
 
-1. Create a new notebook → **File → Import Notebook** → upload
+> **Quickest way:** open the published notebook,
+> **[bone-age-rsna-azmi-kaggle on Kaggle](https://www.kaggle.com/code/azizulabedinazmi/bone-age-rsna-azmi-kaggle/notebook?scriptVersionId=372515174)**.
+> It shows the full Kaggle T4 run with all outputs (version 372515174). Click **Copy & Edit** to run it yourself; the
+> dataset is already attached, so you can skip step 2.
+
+1. Or create a new notebook → **File → Import Notebook** → upload
    [`Notebook/bone-age-rsna-azmi-kaggle.ipynb`](Notebook/bone-age-rsna-azmi-kaggle.ipynb).
 2. **Add Input** → search **RSNA Bone Age** (by kmader, ≈ 10 GB). It is mounted under `/kaggle/input` (`../input`)
    and found automatically. If you forget this step, the notebook downloads the dataset with `kagglehub` instead
@@ -612,6 +618,14 @@ If you use this work, please credit it (see [License](#15-license)). GitHub's **
   year   = {2026},
   howpublished = {\url{https://github.com/azizulabedinazmi/Bone-Age-From-Hand-X-Rays}},
   note   = {ORCID: 0009-0003-5269-6900. Code: MIT License; documentation and figures: CC BY 4.0}
+}
+
+@misc{azmi2026boneagekaggle,
+  author = {Azizul Abedin Azmi},
+  title  = {bone-age-rsna-azmi-kaggle (Kaggle notebook, version 372515174)},
+  year   = {2026},
+  publisher = {Kaggle},
+  howpublished = {\url{https://www.kaggle.com/code/azizulabedinazmi/bone-age-rsna-azmi-kaggle/notebook?scriptVersionId=372515174}}
 }
 ```
 
